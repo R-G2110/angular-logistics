@@ -1,0 +1,60 @@
+.top-header
+ {
+  height: 50px;
+  border: var(--border-width) solid var(--border-color) ;
+
+  .container-sm
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p
+    {
+      font-weight: 600;
+    }
+
+    .top-header-menu
+    {
+      display: flex;
+
+      .customer-service
+      {
+        display: flex;
+        height: 100%;
+        padding-right: 20px;
+        margin-right: 20px;
+        border-right: 2px solid black;
+        em
+        {
+          margin: 0 5px;
+          text-transform: capitalize;
+          font-weight: 700;
+          color: var(--color-blue-dark);
+        }
+      }
+
+
+      .social-media
+      {
+        display: flex;
+        gap: 20px;
+        font-size: var(--font-md);
+        color: var(--color-blue);
+
+        i
+        {
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover
+          {
+            scale: 1.1;
+            color: var(--color-blue-dark);
+          }
+        }
+      }
+
+    }
+  }
+ }
